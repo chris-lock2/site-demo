@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!-- Começando as aulas
+    o que seria HTML
+    Hypertext = 
+        São texto que aceitam links e audio visual
+    
+    Markup
+        Marcação feita por <tags>
+
+
+    Language
+        É liguagem de comunicação
+    -->
+
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!--Responsavel por receber configurações da pagina-->
+        <title>Casa Criativa</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+
+
+<body>
+
+    <div id="container">
+
+        <section id="intro">
+
+            <header>
+                <img src="logo.png" alt="Logo do site">
+            </header>
+                
+        <main>
+            <p>
+                Agora iremos fazer algumas coisas para a quaretena
+            </p>
+
+            <p>
+                fazendo as aulas de omninstack direto com o css e html
+            </p>
+
+            <p>
+                por enquanto, fazer o básico em html para reforçar
+            </p>
+
+        </main>
+
+        <section id="buttons">
+            <button onclick="onoff()">+ Novas ideias</button>
+            <button class="fat">Ver ideias</button>
+        </section>
+            
+            
+            <footer>
+                Com ❤ <a href="https://rocketseat.com.br/">RocketSeat</a> 
+            </footer>
+
+        </section>
+
+        <section id="last_ideias">
+            <div class="ideia">
+                <img 
+                    src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
+                    alt="icone mexendo no computador">
+                
+                <div class="content">
+                    <h3>Cursos de programação</h3>
+                    <p>Estudo</p>
+                    <div class="description">
+                        Para o nosso curso de programação, estamos aprendendo a utilização do CSS com mais precisão
+                        sem precisar quebrar a cabeça com um monte de bordas, só precisamos fazer a junção de tudo.
+                    </div>
+
+                    <a href="#">Ir para ideia</a>
+                </div>
+    
+            </div>
+
+
+            <div class="ideia">
+                    <img 
+                        src="https://image.flaticon.com/icons/svg/2729/2729005.svg" 
+                        alt="peso para exercicios">
+                    
+                    <div class="content">
+                        <h3>Exercicios</h3>
+                        <p>Saúde</p>
+    
+                        <div class="description">
+                            Sempre bom aproveitar todo o momento em casa, para não ficar só comendo e vendo tv, mexendo
+                            no computador ou jogando video game, sempre tenha um momento para fazer exercicios. 
+                            Sua saúde vai lhe agradescer
+                        </div>
+    
+                        <a href="#">Ir para ideia</a>
+                    </div>
+        
+                </div>
+
+                <div class="ideia">
+                        <img 
+                            src="https://image.flaticon.com/icons/svg/2729/2729027.svg" 
+                            alt="boneco meditando">
+                        
+                        <div class="content">
+                            <h3>Meditação</h3>
+                            <p>Estudo</p>
+        
+                            <div class="description">
+                                Ter pausas durante o dia para refletir sobre suas ideias, planejamento para o
+                                futuro e meditação, faz que sua saúde e bem estar esteja no topo.
+                            </div>
+        
+                            <a href="#">Ir para ideia</a>
+                        </div>
+            
+                    </div>
+        </section>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>Nova Ideia</h1>
+
+            <form action="">
+            
+                <div class="input_wrapper">
+                    <label for="title">Titulo da ideia</label>
+                    <input type="text" name="title">
+                </div>
+            
+                <div class="input_wrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+                </div>
+            
+                <div class="input_wrapper">
+                    <label for="image">Link da imagem</label>
+                    <input type="url" name="image">
+                </div>
+            
+                <div class="input_wrapper">
+                    <label for="description">Digite uma descrição para essa ideia</label>
+                    <textarea name="description" cols="30" rows="10"></textarea>
+                </div>
+            
+                <div class="input_wrapper">
+                    <label for="link">Link da ideia</label>
+                    <input type="url" name="link">
+                </div>
+            
+            
+                <a href="#" onclick="onoff()">Voltar</a>
+                <button>Salvar</button>
+            
+            
+            
+            </form>
+        </div>
+    </div>    
+                
+    <script src="script.js"></script>
+
+    </body>
+
+    
+</html>
