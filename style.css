@@ -14,7 +14,7 @@
 */
 
 
-
+/*Estilo Globais*/
 
 body{
      background: rgb(161, 161, 159);
@@ -32,6 +32,12 @@ a {
 
 }
 
+
+
+body.hideScroll {
+     overflow: hidden;
+}
+
 a:hover {
      text-decoration: underline;
 }
@@ -41,6 +47,35 @@ p, .description {
      line-height: 24px;
      letter-spacing: 0.1px;
 }
+
+.button{
+     color: rgba(0, 0, 0, 0.699);
+     background: rgb(255, 255, 255);
+
+     width: 150px;
+     height: 40px;
+
+     border-radius: 60px 0;
+
+     font-size: 14px;
+     font-weight: bold;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     box-shadow: 10px 8px 20px rgba(100, 28, 440, 0.30);
+}
+
+.button:hover{
+     background-color: rgba(66, 90, 230, 0.726);
+     text-decoration: none;
+     border-radius: 15px 0;
+}
+
+
+/*Estilos Padrões*/
+
 
 #container {
     width: 80%; 
@@ -54,7 +89,7 @@ p, .description {
 #intro {
      width: 300px;
      
-     margin-right: 20px;
+     margin-right: 60px;
 }
 
 main {
@@ -90,20 +125,7 @@ button:hover{
      text-decoration: underline;
 }
             
-button.fat{
-     color: rgba(0, 0, 0, 0.699);
-     background: rgb(255, 255, 255);
 
-     width: 150px;
-     height: 40px;
-
-     border-radius: 60px 0;
-     box-shadow: 10px 8px 20px rgba(100, 28, 440, 0.30);
-}
-
-button.fat:hover{
-     text-decoration: none;
-}
 
 footer {
      text-align: center;
@@ -162,16 +184,21 @@ footer a{
      position: absolute;
 
      top: 0;
-     width: 100vw;
-     height: 100vh;;
+     bottom: 0;
+     right: 0;
+     left: 0;
 
      display: flex;
      align-items: center;
      justify-content: center;
 }
 
+#modal.addScroll {
+     overflow: auto;
+}
+
 #modal .content {
-     margin-top: 80px;
+     margin-top: 0;
      color: white;
 }
 
@@ -183,7 +210,7 @@ footer a{
      width: 80%;
      max-width: 600px;
 
-     margin: 0 auto;
+     margin: 0 auto 30px;
 
      display: grid; 
      grid-template-columns: 1fr 1fr;
@@ -274,4 +301,76 @@ form button:hover {
 #modal.hide{
      opacity: 100ms;
      visibility: hidden;     
+}
+
+/* ideia.html */
+
+#page-ideias #container {
+     display: block;
+}
+
+#page-ideias header {
+     display: flex;
+     justify-content: space-between;
+}
+
+#page-ideias nav {
+     display: flex;
+     align-items: center;
+}
+
+#page-ideias nav li {
+     list-style: none;
+
+     margin-right: 20px;
+}
+
+#page-ideias nav li a {
+     color: black;
+}
+
+#page-ideias nav li a.button {
+     color: white;
+     background: rgba(24, 24, 224, 0.623);
+}
+
+#page-ideias nav li:last-child {
+     margin: 0;
+     
+}
+
+
+#page-ideias section#title {
+     text-align: center;
+}
+
+#page-ideias section#title p {
+     color: rgba(3, 74, 87, 0.767);
+     margin: 0;
+}
+
+#page-ideias section#title h1 {
+     font-size: 40px;
+     margin: 0;
+}
+
+#page-ideias section#ideias {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+
+     gap: 30px;
+}
+
+#page-ideias section#ideias .ideia {
+     margin: 0;
+}
+
+/* não esquecer que é possivel fazer agrupamentos caso queira mudar tudo com a mesma ideias
+Importante deixar especificado o que quer mudar e quanto mais detalhe colocar, mais forte
+fica a tag que gostaria de mudar */
+
+#page-ideias section#title,
+#page-ideias section#ideias,
+#page-ideias section#footer {
+     margin: 60px;
 }
