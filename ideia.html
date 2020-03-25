@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ideias - casas criativas</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="page-ideias">
+    
+    <div id="container">
+        <header>
+            <a href="index.html">
+                <img src="logo.png" alt="Logo do site"> 
+            </a>
+            <nav>
+                <li><a href="index.html"> Inicio</a></li>
+                <li><a href="#"> comentarios</a></li>
+                <li><a href="#" class="button" onclick="onoff()"> Nova Ideia</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+            
+        <main>
+            <section id="ideias">
+                <div class="ideia">
+                    <img 
+                        src="https://image.flaticon.com/icons/svg/2729/2729007.svg" 
+                        alt="icone mexendo no computador">
+                    
+                    <div class="content">
+                        <h3>Cursos de programação</h3>
+                        <p>Estudo</p>
+                        <div class="description">
+                            Para o nosso curso de programação, estamos aprendendo a utilização do CSS com mais precisão
+                            sem precisar quebrar a cabeça com um monte de bordas, só precisamos fazer a junção de tudo.
+                        </div>
+    
+                        <a href="#">Ir para ideia</a>
+                    </div>
+        
+                </div>
+    
+    
+                <div class="ideia">
+                        <img 
+                            src="https://image.flaticon.com/icons/svg/2729/2729005.svg" 
+                            alt="peso para exercicios">
+                        
+                        <div class="content">
+                            <h3>Exercicios</h3>
+                            <p>Saúde</p>
+        
+                            <div class="description">
+                                Sempre bom aproveitar todo o momento em casa, para não ficar só comendo e vendo tv, mexendo
+                                no computador ou jogando video game, sempre tenha um momento para fazer exercicios. 
+                                Sua saúde vai lhe agradescer
+                            </div>
+        
+                            <a href="#">Ir para ideia</a>
+                        </div>
+            
+                    </div>
+    
+                    <div class="ideia">
+                            <img 
+                                src="https://image.flaticon.com/icons/svg/2729/2729027.svg" 
+                                alt="boneco meditando">
+                            
+                            <div class="content">
+                                <h3>Meditação</h3>
+                                <p>Estudo</p>
+            
+                                <div class="description">
+                                    Ter pausas durante o dia para refletir sobre suas ideias, planejamento para o
+                                    futuro e meditação, faz que sua saúde e bem estar esteja no topo.
+                                </div>
+            
+                                <a href="#">Ir para ideia</a>
+                            </div>
+                
+                        </div>
+
+
+                        <div class="ideia">
+                            <img 
+                                src="https://image.flaticon.com/icons/svg/2729/2729038.svg" 
+                                alt="tela de pintra">
+                            
+                            <div class="content">
+                                <h3>Criatividade</h3>
+                                <p>Arte</p>
+                                    Ter uma boa criatividade ajuda a desenvolver boas ideias para um futuro.
+                                 Desenhar é uma boa maneira de se expressar e pensar.
+                                <div class="description">
+                                    
+                                </div>
+            
+                                <a href="#">Ir para ideia</a>
+                            </div>
+                
+                        </div>
+            </section>
+        </main>
+        <footer>
+            <!-- usando target="_blank", ira abrir o link em uma nova aba-->
+            Com ❤ <a href="https://rocketseat.com.br/" target="_blank">RocketSeat</a> 
+        </footer>
+    </div>
+
+        <!-- Modal -->
+        <div id="modal" class="hide">
+            <div class="content">
+                <h1>Nova Ideia</h1>
+    
+                <form action="">
+                
+                    <div class="input_wrapper">
+                        <label for="title">Titulo da ideia</label>
+                        <input type="text" name="title">
+                    </div>
+                
+                    <div class="input_wrapper">
+                        <label for="category">Categoria</label>
+                        <input type="text" name="category">
+                    </div>
+                
+                    <div class="input_wrapper">
+                        <label for="image">Link da imagem</label>
+                        <input type="url" name="image">
+                    </div>
+                
+                    <div class="input_wrapper">
+                        <label for="description">Digite uma descrição para essa ideia</label>
+                        <textarea name="description" cols="30" rows="10"></textarea>
+                    </div>
+                
+                    <div class="input_wrapper">
+                        <label for="link">Link da ideia</label>
+                        <input type="url" name="link">
+                    </div>
+                
+                
+                    <a href="#" onclick="onoff()">Voltar</a>
+                    <button>Salvar</button>
+                
+                
+                
+                </form>
+            </div>
+        </div>    
+        
+        <script src="script.js"></script>
+
+</body>
+</html>
